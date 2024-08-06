@@ -37,7 +37,7 @@ function Analysis() {
   //
   return (
     <>
-      <div className="bg-[#F2F4F8] flex flex-col items-center pt-[50px] md:pt-[150px] h-auto">
+      <div className="bg-[#F2F4F8] flex flex-col items-center pt-[50px] md:pt-[150px] h-auto pb-4">
         <div className="flex flex-col items-center">
           <button className="text-[#545FE8] border-[1px] p-1 border-blue-700 rounded-[40px] w-[150px] h-[32px] mb-3">
             News & Analysis
@@ -51,6 +51,7 @@ function Analysis() {
         </div>
 
         {/* cards */}
+
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-[70px] items-center w-[90%]">
           <div className="col-span-1 md:col-span-2 lg:col-span-2">
             <img

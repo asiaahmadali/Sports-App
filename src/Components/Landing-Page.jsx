@@ -4,7 +4,7 @@ import CardSection from "./Cards-Section";
 import DashBoard from "./DashBoard";
 import Features from "./Features";
 import Analysis from "./Analysis";
-
+import DataFigures from "./Data-Figures";
 function LandingPage() {
   return (
     <>
@@ -14,6 +14,7 @@ function LandingPage() {
       <DashBoard></DashBoard>
       <Features></Features>
       <Analysis></Analysis>
+      <DataFigures></DataFigures>
     </>
   );
 }
