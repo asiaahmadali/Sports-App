@@ -22,7 +22,7 @@ function FeatureCards() {
   //
   return (
     <>
-      <div className="bg-[#DDE1E6] flex flex-col items-center pt-[120px] md:pt-[250px] h-auto pb-[40px]">
+      <div className="bg-[#DDE1E6] flex flex-col items-center pt-[90px] md:pt-[100px] h-auto pb-[40px]">
         <div className="flex flex-col items-center">
           <button className="text-[#545FE8] border-[1px] p-1 border-blue-700 rounded-[40px] w-[150px] h-[32px] mb-3">
             Key Features

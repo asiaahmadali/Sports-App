@@ -1,4 +1,3 @@
-import Card from "./Card";
 import FeatureCard from "./Feature-Card";
 import NewsCard from "./News-card";
 
@@ -22,8 +21,7 @@ function Analysis() {
   const img3src = "images/anal-img2.png";
 
   //   card 4 details
-  const h4 =
-    "Manchester United cuts profit forecast after Champions League ejection";
+  const h4 = "Manchester United cuts profit forecast after Champions League ";
   const img4src = "images/anal-img3.png";
 
   //   card 5 details
@@ -37,7 +35,7 @@ function Analysis() {
   //
   return (
     <>
-      <div className="bg-[#F2F4F8] flex flex-col items-center pt-[50px] md:pt-[150px] h-auto pb-4">
+      <div className="bg-[#F2F4F8] flex flex-col items-center pt-[90px] md:pt-[100px] h-auto pb-4">
         <div className="flex flex-col items-center">
           <button className="text-[#545FE8] border-[1px] p-1 border-blue-700 rounded-[40px] w-[150px] h-[32px] mb-3">
             News & Analysis
@@ -71,6 +69,11 @@ function Analysis() {
           <FeatureCard heading={h4} para={para} imgsrc={img4src}></FeatureCard>
           <FeatureCard heading={h5} para={para} imgsrc={img5src}></FeatureCard>
           <FeatureCard heading={h6} para={para} imgsrc={img6src}></FeatureCard>
+        </div>
+        {/* more btn */}
+        <div className="text-[#545FE8] border-[1px] border-blue-700 pl-4 pr-4 text-center mt-6  h-[32px] mb-3 flex gap-2">
+          <button className="">Explore More News & Analysis</button>
+          <img src="images/arrow.png" alt="" />
         </div>
       </div>
     </>

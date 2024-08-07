@@ -5,6 +5,7 @@ import DashBoard from "./DashBoard";
 import Features from "./Features";
 import Analysis from "./Analysis";
 import DataFigures from "./Data-Figures";
+import Footer from "./Footer";
 function LandingPage() {
   return (
     <>
@@ -15,6 +16,7 @@ function LandingPage() {
       <Features></Features>
       <Analysis></Analysis>
       <DataFigures></DataFigures>
+      <Footer></Footer>
     </>
   );
 }
