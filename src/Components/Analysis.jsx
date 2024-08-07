@@ -50,7 +50,7 @@ function Analysis() {
 
         {/* cards */}
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-[70px] items-center w-[90%]">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-[70px]  place-items-center w-full md:w-[90%]">
           <div className="col-span-1 md:col-span-2 lg:col-span-2">
             <img
               src="images/anal-main-img.png"
