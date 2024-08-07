@@ -50,7 +50,7 @@ function Footer() {
             <div>
               <p className="font-medium">Join our Press-only Newsletter</p>
             </div>
-            <div className="w-[300px]">
+            <div className="w-[300px] flex">
               <input
                 type="email"
                 placeholder="Email.."
