@@ -40,7 +40,7 @@ function Footer() {
             </div>
           </div>
           {/* social media plateforms */}
-          <div className="flex flex-col gap-4 text-white items-center">
+          <div className="flex flex-col gap-4 text-white items-start">
             <div className="flex gap-4">
               <img src="images/linkedin.png" alt="linkedin" />
               <img src="images/Facebook.png" alt="facebook" />

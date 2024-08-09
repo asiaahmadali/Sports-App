@@ -1,6 +1,19 @@
 import FeatureCard from "./Feature-Card";
 import NewsCard from "./News-card";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import "../App.css";
+
+// import required modules
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+
 function Analysis() {
   // card1 details
   const h1 = "Ford's relationship with Red Bull should worry their US rivals";
@@ -49,27 +62,93 @@ function Analysis() {
         </div>
 
         {/* cards */}
-
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-[70px]  place-items-center w-full md:w-[90%]">
-          <div className="col-span-1 md:col-span-2 lg:col-span-2">
-            <img
-              src="images/anal-main-img.png"
-              alt="main-image"
-              className="w-full h-[390px]"
-            />
+        <Swiper
+          cssMode={true}
+          navigation={true}
+          pagination={true}
+          mousewheel={true}
+          keyboard={true}
+          modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          breakpoints={{
+            // when window width is >= 640px
+            450: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            // when window width is >= 1024px
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            // when window width is >= 1280px
+            1280: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
+          className="mySwiper"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-[70px]  place-items-center w-full md:w-[90%]">
+            <SwiperSlide>
+              <div className="col-span-1 md:col-span-2 lg:col-span-2">
+                <img
+                  src="images/anal-main-img.png"
+                  alt="main-image"
+                  className="w-full h-[390px]"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <NewsCard
+                heading={h1}
+                para={p1}
+                imgsrc={img1src}
+                mainHead={head}
+              ></NewsCard>
+            </SwiperSlide>
+            <SwiperSlide>
+              <FeatureCard
+                heading={h2}
+                para={para}
+                imgsrc={img2src}
+              ></FeatureCard>
+            </SwiperSlide>
+            <SwiperSlide>
+              <FeatureCard
+                heading={h3}
+                para={para}
+                imgsrc={img3src}
+              ></FeatureCard>
+            </SwiperSlide>
+            <SwiperSlide>
+              <FeatureCard
+                heading={h4}
+                para={para}
+                imgsrc={img4src}
+              ></FeatureCard>
+            </SwiperSlide>
+            <SwiperSlide>
+              <FeatureCard
+                heading={h5}
+                para={para}
+                imgsrc={img5src}
+              ></FeatureCard>
+            </SwiperSlide>
+            <SwiperSlide>
+              <FeatureCard
+                heading={h6}
+                para={para}
+                imgsrc={img6src}
+              ></FeatureCard>
+            </SwiperSlide>
           </div>
-          <NewsCard
-            heading={h1}
-            para={p1}
-            imgsrc={img1src}
-            mainHead={head}
-          ></NewsCard>
-          <FeatureCard heading={h2} para={para} imgsrc={img2src}></FeatureCard>
-          <FeatureCard heading={h3} para={para} imgsrc={img3src}></FeatureCard>
-          <FeatureCard heading={h4} para={para} imgsrc={img4src}></FeatureCard>
-          <FeatureCard heading={h5} para={para} imgsrc={img5src}></FeatureCard>
-          <FeatureCard heading={h6} para={para} imgsrc={img6src}></FeatureCard>
-        </div>
+        </Swiper>
+
         {/* more btn */}
         <div className="text-[#545FE8] border-[1px] border-blue-700 pl-4 pr-4 text-center mt-6  h-[32px] mb-3 flex gap-2">
           <button className="">Explore More News & Analysis</button>
