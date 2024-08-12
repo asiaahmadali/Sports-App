@@ -9,13 +9,13 @@ function Header() {
           <p className="text-sm md:text-xl font-[300] w-[200px] md:w-full mt-3">
             Reliable sports financial data across 1,000+ teams and league
           </p>
-          <div className="flex border-1 mt-3 text-sm p-4 ">
+          <div className="flex border-1 mt-3 text-sm p-4">
             <input
               type="text"
               placeholder="search for Team or League"
               className="outline-none text-gray-500 p-2 w-[200px] md:w-[400px]"
             />
-            <div className="flex bg-blue-600 items-center w-[90px]">
+            <div className="flex bg-blue-600 items-center w-[110px] p-2">
               <button className="ml-2 p-2">Search</button>
               <img src="images/search-icon.png" alt="" className="w-[30px]" />
             </div>
