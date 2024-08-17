@@ -4,7 +4,7 @@ function DataFigures() {
       <div className="flex bg-[#23254C] justify-around items-center gap-[50px] text-white p-[50px] flex-col md:flex-row">
         <div className="flex flex-col items-center md:items-start gap-2">
           <button className="border-[1px] p-1 border-white rounded-[40px] w-[150px] h-[32px] mb-3">
-            Explore our Data
+            Explore our data
           </button>
           <h1 className="border-1 text-xl font-[500]  text-center">
             Premier League Finance Dashboards
